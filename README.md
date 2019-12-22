@@ -1,2 +1,3 @@
 # vkk-svg.github.io
-first webpage
+Hi
+Hopefully my first webpage :)
