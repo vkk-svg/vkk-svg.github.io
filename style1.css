@@ -112,6 +112,7 @@ nav a{
     padding: 0 32px;
     color: white;
     transition: 0.45s;
+    text-decoration: none;
 }
 
 nav a:hover{
@@ -142,7 +143,7 @@ nav ul{
 }
 
 #logo-img:hover{
-        background: rgba(50,23,94,0.5); 
+        background: rgba(21, 11, 39, 0.5); 
 }
 
 nav li{
@@ -162,7 +163,6 @@ nav li{
       color: floralwhite;
       display: flex;
       align-items: center;
-      display: none;
 }
 
 #search-icon{
@@ -178,8 +178,36 @@ nav li{
 
 #slideout-menu{
     display: none;
+    background: rgba(212,175,55, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    margin-top: 72px;
+    text-align: center;
+    transition: 0.5s;
 }
 
+#slideout-menu ul{
+    list-style: none;
+    padding: 0 32px;
+    line-height: 8vh;
+}
+
+#slideout-menu ul li{
+   font-family: 'roboto condensed', sans serif;
+}
+
+#slideout-menu a{
+   text-decoration: none;
+}
+
+#slideout-menu input{
+    width: 85%;
+    font-family: 'roboto condensed', sans serif;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
 
 section{
     display: flex;
@@ -217,7 +245,7 @@ section{
 
 .card-image{
     transition: 0.5s;
-    width: 100%;
+    width: 50%;
     background-position: center;
     margin: 10px auto;
     background-color:  rgb(24, 11, 44); 
@@ -237,21 +265,7 @@ img{
     padding: 0 8px;
 }
 
-@media(min-width: 720px){
-    
-     main{
-         width: 95%;
-     }
 
-     .card {
-         width: 45%;
-     }
-
-     .card .card-image img{
-         width: 100%;
-     }
-
-}
 
 .btn-readmore{
     background-color: rgba(212,175,55, 0.9);
@@ -295,6 +309,7 @@ footer ul{
 footer #left-footer{
     flex: 1;
     padding-left: 32px;
+    color: white;
 }
 
 .extra{
@@ -325,7 +340,7 @@ footer #social-media-footer ul li {
     transition: 0.5s;
     justify-content: space-between;
     padding: 10px;
-    font-size: 48px;;
+    font-size: 48px;
 }
 
 footer #social-media-footer ul li:hover {
@@ -336,4 +351,122 @@ footer #social-media-footer ul li:hover {
     padding: 10px;
     font-size: 40px;
 }
+
+footer #quick-links-footer ul li {
+    color: rgba(212,175,55, 0.9);
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+    justify-content: space-between;
+}
+
+footer #quick-links-footer ul li:hover {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+
+
+
+
+
+@media(max-width: 900px){
+    
+    main{
+        width: 45%;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+   
+
+}
+
+@media only screen and (max-width: 900px){
+   nav ul {
+       display: none;
+   }
+
+   #logo-img{
+      margin: auto;
+      width: 23%;
+   }
+}
+
+@media(max-width: 900px) {
+   
+    /*.........................................*/
+   
+    main{
+       width: 85%;
+   }
+
+   #menu-icon {
+    height: 100%;
+    font-size: 20px;
+    padding: 0 4px;
+    color: floralwhite;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   }
+
+   #slideout-menu{
+      /* display: block;  */
+   }
+
+   footer #social-media-footer ul {
+    color: rgba(212,175,55, 0.9);
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+    justify-content: space-between;
+    padding: 0;
+}
+
+footer #social-media-footer ul li {
+    color: rgba(212,175,55, 0.9);
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    justify-content: space-between;
+    padding: 1px;
+    font-size: 17px;
+ }
+
+ footer #social-media-footer ul li:hover {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 20px;
+ }
+}
+
+
+@media(max-width: 719px){
+    main{
+        width: 95%;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .card .card-image{
+        width:100%
+    }
+}
+
+
+
+
+
 
